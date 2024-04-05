@@ -59,3 +59,54 @@ values ('NV01', 'La ultima cena', TO_DATE('1893-01-01','YYYY-MM-DD'), 'Pastel so
 
 insert into Obras(CLAVE, TITULO, FECHA, TECNICA, MATERIAL, CVE_ARTISTA)
 values ('EM06', 'El grito', TO_DATE('1893-01-01','YYYY-MM-DD'),'Tempera y pastel sobre carton', 'Carton', 'EM05');
+
+/*Command to Create Table Propietarios*/
+CREATE TABLE PROPIETARIOS
+(CLAVE VARCHAR (4) PRIMARY KEY,
+NOMBRE VARCHAR (30) NOT NULL,
+TIPO VARCHAR (1) NOT NULL,
+DIRECCION VARCHAR (30) NOT NULL,
+CIUDAD VARCHAR (30) NOT NULL,
+PAIS VARCHAR (30) NOT NULL);
+
+/*Ingresar Valores a la tabla Propietarios */
+inser int Propietarios (CLAVE, NOMBRE, TIPO, DIRECCION, CIUDAD, PAIS) 
+values ('','','','','','');
+
+inser int Propietarios (CLAVE, NOMBRE, TIPO, DIRECCION, CIUDAD, PAIS) 
+values ('','','','','','');
+
+inser int Propietarios (CLAVE, NOMBRE, TIPO, DIRECCION, CIUDAD, PAIS) 
+values ('','','','','','');
+
+inser int Propietarios (CLAVE, NOMBRE, TIPO, DIRECCION, CIUDAD, PAIS) 
+values ('','','','','','');
+
+inser int Propietarios (CLAVE, NOMBRE, TIPO, DIRECCION, CIUDAD, PAIS) 
+values ('','','','','','');
+
+inser int Propietarios (CLAVE, NOMBRE, TIPO, DIRECCION, CIUDAD, PAIS) 
+values ('','','','','','');
+
+/*Command to Create Table Pertenece*/
+CREATE TABLE PERTENECE
+(CVE_OBRAS varchar (4) NOT NULL,
+CVE_PROP VARCHAR (4), NOT NULL,
+FECHA_INI date NOT NULL,
+FECHA_FIN date);
+
+/*Ingresar Valores a la tabla Pertenece */
+insert into Pertenece (CVE_OBRAS,CVE_PROP,FECH_INI,FECHA_FIN)
+values ('', '', '', '', '')
+
+insert into Pertenece (CVE_OBRAS,CVE_PROP,FECH_INI,FECHA_FIN)
+values ('', '', '', '', '')
+
+insert into Pertenece (CVE_OBRAS,CVE_PROP,FECH_INI,FECHA_FIN)
+values ('', '', '', '', '')
+
+insert into Pertenece (CVE_OBRAS,CVE_PROP,FECH_INI,FECHA_FIN)
+values ('', '', '', '', '')
+
+insert into Pertenece (CVE_OBRAS,CVE_PROP,FECH_INI,FECHA_FIN)
+values ('', '', '', '', '')
